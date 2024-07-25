@@ -53,15 +53,20 @@ To set up the project locally, follow these steps:
 
 ## Usage
 
-1. **OTP Verification:**
-   - Navigate to the OTP Verification page.
-   - Enter the 4-digit OTP received on your phone.
-   - Click "Verify Account" to validate.
+### 1. OTP Verification
+- **Navigate**: Go to the OTP Verification page.
+- **Enter OTP**: Input the 4-digit OTP received on your phone.
+- **Verify**: Click the "Verify Account" button to validate the OTP and proceed.
 
-2. **Manage Bundle:**
-   - Access the Manage Bundle page.
-   - View, edit, or delete bundles as required.
+### 2. Manage Bundle
+- **Access**: Navigate to the Manage Bundle page.
+- **Vertical Course Cards**: The page features a list of vertical course cards.
+  - **Move to Top**: Click this action to move a card to the top of the list.
+  - **Move to Bottom**: Click this action to move a card to the bottom of the list.
+  - **Remove**: Click this action to remove the card from the list.
+- **Drag-and-Drop**: Utilize drag-and-drop functionality for reordering and managing course cards.
 
-3. **Batches:**
-   - Go to the Batches page.
-   - Manage batch details, including titles, start and end dates, and more.
+### 3. Batches
+- **Navigate**: Go to the Batches page.
+- **Manage Batches**: View and manage batch details, including titles, start and end dates, and additional batch information.
+

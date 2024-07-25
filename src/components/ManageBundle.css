@@ -1,0 +1,159 @@
+.manage-bundle {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.manage-bundle h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #222;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.manage-bundle h2:hover {
+  color: #007bff;
+  text-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+}
+
+.manage-bundle p {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #666;
+  font-size: 1.1em;
+}
+
+.bundle-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bundle-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  position: relative;
+}
+
+.bundle-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  background-color: #f0f8ff;
+}
+
+.item-image {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.item-image:hover {
+  transform: scale(1.05);
+  border: 2px solid #007bff;
+}
+
+.item-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item-details h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.item-details h3:hover {
+  color: #007bff;
+  text-shadow: 0 2px 4px rgba(0, 123, 255, 0.3);
+}
+
+.item-details p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.item-type {
+  align-self: flex-start;
+  background-color: #00c853;
+  color: white;
+  border-radius: 5px;
+  padding: 3px 8px;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.item-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  right: 10px;
+}
+
+.item-actions .MuiIconButton-root {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.item-actions .MuiIconButton-root:hover {
+  color: #007bff;
+  transform: scale(1.1);
+}
+
+.item-actions button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 14px;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.item-actions button:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .manage-bundle h2 {
+    font-size: 2em;
+  }
+
+  .manage-bundle p {
+    font-size: 1em;
+  }
+
+  .bundle-item {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .item-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .item-actions {
+    width: 100%;
+    justify-content: flex-end;
+    position: static;
+  }
+}

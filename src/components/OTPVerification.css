@@ -1,0 +1,128 @@
+/* src/styles/OTPVerification.css */
+.otp-verification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #e0f7fa, #80deea); /* Gradient background */
+  margin: 0;
+  overflow: hidden; /* Prevents scrolling */
+}
+
+.otp-container {
+  background: #ffffff; /* White background for container */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow for depth */
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 1s ease-out; /* Fade-in animation for container */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.otp-container h1 {
+  font-size: 1.75em;
+  color: #333;
+  margin-bottom: 15px;
+  font-family: 'Roboto', sans-serif; /* Font family */
+  letter-spacing: 1px;
+}
+
+.otp-container p {
+  color: #999; /* Light grey color */
+  margin-bottom: 25px;
+  font-family: 'Arial', sans-serif;
+}
+
+.otp-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.otp-input {
+  width: 55px;
+  height: 55px;
+  font-size: 1.75em;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  background: rgba(255, 255, 255, 0.9); /* Slight background color */
+}
+
+.otp-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  transform: scale(1.1);
+}
+
+.verify-button {
+  padding: 12px 25px;
+  font-size: 1.1em;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.verify-button.success {
+  background-color: #28a745;
+}
+
+.verify-button.failure {
+  background-color: #dc3545;
+}
+
+.verify-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.resend-code {
+  margin-top: 25px;
+}
+
+.resend-code p {
+  color: #999; /* Light grey color for text */
+  font-size: 1em;
+}
+
+.resend-code button {
+  background: none;
+  border: none;
+  color: #003366; /* Dark blue color for resend button */
+  cursor: pointer;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+.resend-code button:hover {
+  color: #001f3f; /* Darker blue on hover */
+}
+
+.error-message {
+  color: #dc3545; /* Red color for error message */
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+.success-message {
+  color: #28a745;
+  margin-top: 20px;
+  font-size: 1em;
+}

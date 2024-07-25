@@ -1,0 +1,148 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial, sans-serif';
+  background-color: #f9f9f9;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 1.1em;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.searchInput {
+  margin-left: 10px;
+  flex: 1;
+}
+
+.searchInput .MuiOutlinedInput-root {
+  width: 100%;
+}
+
+.table {
+  min-width: 650px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table thead {
+  background-color: #e0e0e0;
+}
+
+.table th, .table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.table th {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+.table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.tableCell {
+  display: flex;
+  align-items: center;
+}
+
+.titleImage {
+  width: 80px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 15px;
+  border: 1px solid #ddd;
+}
+
+.titleText {
+  display: flex;
+  align-items: center;
+}
+
+.published {
+  color: green;
+  font-weight: bold;
+}
+
+.unpublished {
+  color: red;
+  font-weight: bold;
+}
+
+.rowsPerPage {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: flex-end;
+}
+
+.rowsPerPage label {
+  margin-right: 10px;
+  font-size: 1em;
+}
+
+@media (max-width: 768px) {
+  .table, .table thead, .table tbody, .table th, .table td, .table tr {
+    display: block;
+  }
+
+  .table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .table tr {
+    margin: 0 0 1rem 0;
+  }
+
+  .table td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  .table td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    content: attr(data-label);
+    font-weight: bold;
+  }
+
+  .titleImage {
+    width: 100px;
+    height: 60px;
+  }
+}

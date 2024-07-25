@@ -5,13 +5,16 @@ Master-Ji is a comprehensive web application featuring OTP verification, manage 
 
 ## Screenshots
 ### OTP Verification
-![OTP Verification Screenshot](path/to/otp-verification-screenshot.png)
+![OTP Verification Screenshot](https://github.com/user-attachments/assets/1ccd3f53-3ad8-4a3d-aabd-86bb0484eebc)
+
 
 ### Manage Bundle
-![Manage Bundle Screenshot](path/to/manage-bundle-screenshot.png)
+![Manage Bundle](https://github.com/user-attachments/assets/be07eebe-4e57-4c07-a472-b5f6c319f171)
+
 
 ### Batches
-![Batches Screenshot](path/to/batches-screenshot.png)
+![batches](https://github.com/user-attachments/assets/768658e2-becb-4c2c-8f9a-4c8187b56083)
+
 
 ## Features
 - **OTP Verification**: Secure verification of user identity through a 4-digit OTP.
